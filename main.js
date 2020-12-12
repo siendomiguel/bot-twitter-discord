@@ -34,7 +34,6 @@ const dest = CHANNEL_ID; //Channel ID (Discord)
 
 // Create a stream to follow tweets
 const USER_ID = process.env.USER_ID;
-const USER_ID_TWO = process.env.USER_ID_TWO
 const stream = twitterClient.stream('statuses/filter', {
   follow: USER_ID, // user_id (Discord)
 });
@@ -56,12 +55,14 @@ stream.on('tweet', tweet => {
 }
 });
 
+/*
+const USER_ID_TWO = process.env.USER_ID_TWO
 let newTweet = twitterClient.stream('statuses/filter', { follow: USER_ID_TWO })
 
 newTweet.on('tweet', function (tweet) {
   console.log(tweet.text)
 });
-
+*/
 
 const prefix = process.env.PREFIX; //Llamamos al Prefix
 
