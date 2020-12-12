@@ -1,0 +1,22 @@
+{
+  "name": "bot-bitfinanzas",
+  "version": "1.0.0",
+  "description": "Bot para publicar en discord tweets de Bitfinanzas",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Siendo Miguel",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "twit": "^2.2.11"
+  }
+}
